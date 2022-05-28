@@ -268,7 +268,7 @@ const PowerPortfolio = () => {
             Header: "Actions",
             accessor: "id",
             Cell: ({ row }) => (
-              <div style={{ textAlign: "center" }}>
+              <div style={{ textAlign: "center", width: "75px" }}>
                 <button className="viewBtn butn-1" onClick={(e) => openEditModal(e, row)}>
                   <i className="fa fa-edit fa-lg" ></i>
                 </button>
