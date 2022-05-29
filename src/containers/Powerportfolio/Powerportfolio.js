@@ -41,6 +41,46 @@ const Styles = styled.div`
     tr:nth-child(3) {
       display: none;
     }
+    tr > *:nth-child(1) {
+      min-width: 50px;
+      text-align: center;
+    }
+    tr > *:nth-child(2) {
+      min-width: 150px;
+      text-align: center;
+    }
+    tr > *:nth-child(3) {
+      min-width: 150px;
+      text-align: center;
+    }
+    tr > *:nth-child(4) {
+      min-width: 100px;
+      text-align: center;
+    }
+    tr > *:nth-child(5) {
+      min-width: 120px;
+      text-align: center;
+    }
+    tr > *:nth-child(6) {
+      text-align: center;
+      min-width: 120px
+    }
+    tr > *:nth-child(7) {
+      min-width: 60px;
+      text-align: center;
+    }
+    tr > *:nth-child(8) {
+      min-width: 160px;
+      text-align: center;
+    }
+    tr > *:nth-child(9) {
+      min-width: 160px;
+      text-align: center;
+    }
+    tr > *:nth-child(10) {
+      min-width: 100px;
+      text-align: center;
+    }
     th {
       font-size: 15px;
       margin: 0;
@@ -48,13 +88,13 @@ const Styles = styled.div`
       padding-bottom: 5px;
       border-bottom: 10px solid rgb(29, 31, 37);
       border-right: 2px solid rgb(29, 31, 37);
+      text-align: center;
       :last-child {
         border-right: 0;
       }
     }
     td {
       margin: 0;
-      padding: 0.5rem;
       font-size: 14px;
       font-family: poppins-semibold;
       border-bottom: 10px solid rgb(29, 31, 37);
@@ -179,6 +219,9 @@ const PowerPortfolio = () => {
   const [domainList, setDomainList] = useState([]);
   const [showEditModal, setShowEditModal] = useState(false);
   const [selectedDomain, setSelectedDomain] = useState(null);
+  const [selectAll, setSelectAll] = useState(false);
+  const [checked, setChecked] = useState([]);
+
 
   useEffect(() => {
     getDomainList();
@@ -222,6 +265,14 @@ const PowerPortfolio = () => {
     });
   };
 
+  const handleSingleCheckboxChange = (data) => {
+    console.log(data);
+  }
+
+  const handleChange = () => {
+
+  }
+
 
   const [open, setOpen] = useState(false);
 
@@ -233,8 +284,31 @@ const PowerPortfolio = () => {
         Header: "Powerportfolio",
         columns: [
           {
+            Header: (
+              <input
+                type="checkbox"
+                onChange={handleChange}
+                checked={selectAll}
+              />
+            ),
+            accessor: " ",
+            Cell: row => (
+              <input
+                type="checkbox"
+                defaultChecked={checked[row.index]}
+                checked={checked[row.index]}
+                onChange={() => handleSingleCheckboxChange(row.index)}
+              />
+            ),
+            sortable: false,
+            filterable: false
+          },
+          {
             Header: "Domain Names",
             accessor: "domain_name",
+            Cell: ({row}) => (
+              <a href={`/landing/${row.original.id}`}>{row.original.domain_name}</a>
+            )
           },
           {
             Header: "Business Status",
@@ -268,7 +342,7 @@ const PowerPortfolio = () => {
             Header: "Actions",
             accessor: "id",
             Cell: ({ row }) => (
-              <div style={{ textAlign: "center", width: "75px" }}>
+              <div style={{ textAlign: "center"}}>
                 <button className="viewBtn butn-1" onClick={(e) => openEditModal(e, row)}>
                   <i className="fa fa-edit fa-lg" ></i>
                 </button>

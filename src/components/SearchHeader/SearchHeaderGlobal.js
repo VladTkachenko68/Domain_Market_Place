@@ -21,7 +21,8 @@ const SearchHeader = (props) => {
 
   return (
     <React.Fragment>
-      <div style={{ textAlign: "center", backgroundColor: "#000" }}>
+      <div className="search-global-bg">
+      {/* <div style={{ textAlign: "center", backgroundColor: "#000" }}> */}
         <Container
           className="header-bottom home-b search-global"
           style={{ position: "sticky", top: "120px", zIndex: "11" }}

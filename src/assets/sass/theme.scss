@@ -94,7 +94,7 @@ img {
   &.with-home {
     border-top: none;
     padding-top: 115px;
-    background: black;
+    background: #0E0E0E;
     @media (max-width: 450px) {
       padding-top: 30px!important;
     }
@@ -240,11 +240,15 @@ img {
     }
   }
 
-  background: black !important;
+  background: #0E0E0E!important;
 }
 
 .navbar-brand>img {
   width: 146px;
+}
+
+.m-landing {
+  background-color: #0E0E0E;
 }
 
 .navbar-brand {
@@ -274,6 +278,7 @@ ul.navbar-nav {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0 26px;
   position: relative;
+  text-align: center;
 }
 
 .navbar-nav .nav-link:hover,
@@ -302,6 +307,9 @@ ul.navbar-nav {
   @media (max-width: 767px) {
     margin: 0;
     margin-right: 5px;
+  }
+  @media (max-width: 375px) {
+    width: 78px;
   }
 }
 
@@ -472,7 +480,7 @@ ul.navbar-nav {
 .find-partner {
   text-align: center;
   padding: 50px 0;
-  background: black;
+  background: #0e0e0e00;
   border-radius: 0 0 6px 6px;
 }
 
@@ -765,7 +773,7 @@ select:focus {
   position: relative;
   text-align: center;
   border-top: 2px solid #494949;
-  background: #fff;
+  background: #0E0E0E;
   padding: 25px 0;
 }
 
@@ -773,6 +781,10 @@ select:focus {
   width: 60%;
   display: inline-block;
   vertical-align: middle;
+  > p {
+    color: white!important;
+    font-family: 'Sui Generis'!important;
+  }
 }
 
 .p-right {
@@ -1427,7 +1439,7 @@ span.tld-dialog-selector-text {
 
 .form-check > label {
   color: white;
-  font-family: 'poppins-regular';
+  font-family: 'Sui Generis';
 }
 
 
@@ -2243,6 +2255,12 @@ iframe {
 
     @media (max-width: 959px) {
       margin-right: 0;
+    }
+    @media (max-width: 1992px) {
+      font-size: 19px!important;
+    }
+    @media (max-width: 1024px) {
+      font-size: 13px!important;
     }
   }
 
@@ -5132,7 +5150,7 @@ iframe {
 }
 
 .search-global {
-  background: #000;
+  background: #0E0E0E;
 
   &.header-bottom.search-global .btn {
     width: 225px;

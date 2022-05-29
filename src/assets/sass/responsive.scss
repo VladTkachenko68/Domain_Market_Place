@@ -797,11 +797,11 @@
 }
 @media (max-width: 375px) {
   .navbar-brand > img{
-    width: 120px;
+    width: 140px!important;
   }
   .navbar-brand {
-    margin-left: 36px;
-    margin-top: -7px; 
+    margin-left: 1px;
+    margin-top: -1px; 
 }
 .list-group {
   width: 100%;

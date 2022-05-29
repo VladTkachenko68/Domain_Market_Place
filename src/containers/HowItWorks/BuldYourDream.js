@@ -9,7 +9,7 @@ import Fade from "react-awesome-reveal";
 const BuildYourdream = (props) => {
   return (
     <>
-      <Container>
+      <Container style={{width: "1332px"}}>
         <Row className="common-styling">
           <Col xs="12" className="mb-4">
             <Fade direction="up">

@@ -65,7 +65,7 @@ function Stable() {
         <div className="stable-icon">
           <div className="stable-title text-center">
             {/* <img src={stable} alt="#" width="250" /> */}
-            <h1 className="breed">My Stable</h1>
+            <h2 className="breed">My Stable</h2>
           </div>
           <div className="container-fluid" style={{width: "88%"}}>
             <ListGroup horizontal className="my-stable-lisiting">

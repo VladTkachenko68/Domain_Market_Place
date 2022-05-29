@@ -23,7 +23,7 @@ const LandingPage = (props) =>  {
   return(
     <React.Fragment style={{zIndex: 1000}}>
       {/* <CommonHeader/> */}
-      <div style={{backgroundColor:'#eaeaea',position: "relative", zIndex: 1000, marginTop: "-78px"}}>
+      <div style={{backgroundColor:'#eaeaea',position: "relative", zIndex: 1000}}>
         <div className="main m-landing">
           <div className="price-banner">
             <div className="container-fluid">
@@ -60,7 +60,7 @@ const LandingPage = (props) =>  {
               <div className="p-right">
                 <img src={horseshoeImg} alt="icon" width="360"/>
                 <div className="landing-domain-name">
-                  <span style={{fontSize: '20px', fontWeight: 'bold'}}>{domainData && domainData.domain_name}111</span><br />
+                  <span style={{fontSize: '20px', fontWeight: 'bold'}}>{domainData && domainData.domain_name}</span><br />
                   <span>is for sale</span><br />
                 </div>
                 {(domainData && domainData.business_status === "Buy Now")?

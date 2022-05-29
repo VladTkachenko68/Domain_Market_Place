@@ -10,7 +10,7 @@ import Fade from "react-awesome-reveal";
 const OurMission = () => {
   return (
     <>
-      <Container>
+      <Container style={{width: "1332px"}}>
         <Row className="common-styling">
           <Col xs="12" className="mb-4">
             {/* <div className="how-it-works-card pb-5" id = "ourmission"> */}
