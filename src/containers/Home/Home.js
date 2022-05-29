@@ -10,6 +10,7 @@ import Media from "../../assets/img/Media.png";
 import SkeletonLeft from "../../assets/img/skeleton.png";
 import SkeletonRight from "../../assets/img/skeleton1.png";
 import SearchHeaderGlobal from "../../components/SearchHeader/SearchHeaderGlobal";
+import LogoAnimation from "../LogoAnimation";
 import Fade from "react-awesome-reveal";
 
 const Home = () => {
@@ -17,18 +18,11 @@ const Home = () => {
     <React.Fragment>
       <CommonHeader />
       <SearchHeaderGlobal />
+        <LogoAnimation />
       <div className="main pb-4 mt-4">
         <img src={SkeletonLeft} className="skeletonleft" alt="skeleton-left" />
         <img src={SkeletonRight} className="skeletonright" alt="skeleton-right" />
         <div className="banner with-home">
-          <img src={Logo} className="studLogo" alt="studioLogo" />
-          <Fade direction="up">
-            <div className="market-place-logon">
-              <span className="section-title mb-4 mx-0 mt-lg-4 pt-4" style={{ color: "white" }}>
-                The World's Most Exclusive Domain <br></br> Marketplace & Top Freelancer Network
-              </span>
-            </div>
-          </Fade>
           <div className="spring-flex">
             <Fade direction="up">
               <div className="spring-sponsored-role">

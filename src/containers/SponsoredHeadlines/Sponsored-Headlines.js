@@ -114,7 +114,7 @@ const SponsoredHeadlines = () => {
       <div className="sponsoredList">
         <div className="sponsoredListpanel">
           <div className="sponsoredListBody">
-            <span className="h5">Buy Now</span>
+            <div className="h5">Buy Now</div>
             <div className="sponsoredListView">
                     {buyNowDomains?.map((item, index) => {
                       if(index < count_per_page)
@@ -153,7 +153,7 @@ const SponsoredHeadlines = () => {
 
         <div className="sponsoredListpanel">
           <div className="sponsoredListBody">
-            <span className="h5">3 Figure Trade Domains</span>
+            <div className="h5">3 Figure Trade Domains</div>
             <div className="sponsoredListView">
                     {threeFigureDomains?.map((item, index) => {
                       if(index < count_per_page)
@@ -190,7 +190,7 @@ const SponsoredHeadlines = () => {
           </div>
 
           <div className="sponsoredListBody">
-            <span className="h5">4 Figure Trade Domains</span>
+            <div className="h5">4 Figure Trade Domains</div>
             <div className="sponsoredListView">
                     {fourFigureDomains?.map((item, index) => {
                       if(index < count_per_page)
@@ -228,7 +228,7 @@ const SponsoredHeadlines = () => {
           </div>
 
           <div className="sponsoredListBody">
-            <span className="h5">5 Figure Trade Domains</span>
+            <div className="h5">5 Figure Trade Domains</div>
             <div className="sponsoredListView">
                     {fiveFigureDomains?.map((item, index) => {
                       if(index < count_per_page)
@@ -268,7 +268,7 @@ const SponsoredHeadlines = () => {
 
         <div className="sponsoredListpanel">
           <div className="sponsoredListBody">
-            <span className="h5">Startup Breeder Domains</span>
+            <div className="h5">Startup Breeder Domains</div>
             <div className="sponsoredListView">
                     {startupBreedersDomains?.map((item, index) => {
                       if(index < count_per_page)

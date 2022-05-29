@@ -264,7 +264,8 @@ class CommonHeader extends Component {
                     >
                       Sponsored Headlines
                     </NavLink>
-                    <NavLink
+                    {
+                      this.props.user.user.email === "boostmyclients@gmail.com" ? <NavLink
                       exact
                       activeClassName="active"
                       title="Broker Page"
@@ -272,7 +273,9 @@ class CommonHeader extends Component {
                       to="/BrokerPage"
                     >
                       Admin Panel
-                    </NavLink>
+                    </NavLink> : null
+                    }
+                    
                   </Nav>
                   <div className="d-flex mb-control">
                     <div className="notification d-lg-flex d-none">
@@ -289,6 +292,9 @@ class CommonHeader extends Component {
                         roundedCircle="true"
                         alt="user-image"
                       />
+                      {
+                        console.log(this.props.user.user.email, "dsfsdf")
+                      }
                       <NavDropdown
                         title={this.props?.user?.user?.first_name}
                         id="basic-nav-dropdown"

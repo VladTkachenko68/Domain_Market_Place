@@ -108,7 +108,7 @@ ul.row-sec {
 .spring-flex {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 
 .spring-screw {
