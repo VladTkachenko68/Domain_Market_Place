@@ -270,7 +270,8 @@ const PowerPortfolio = () => {
   }
 
   const handleChange = () => {
-
+    setSelectAll(false);
+    setChecked([]);
   }
 
 

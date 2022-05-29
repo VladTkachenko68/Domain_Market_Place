@@ -5,7 +5,6 @@ import StartupBreeders from "../../components/StartupBreeders";
 import { Col, Container, Row } from "react-bootstrap";
 import MainFooter from "../mainFooter/MainFooter";
 import SponsoredHeadlines from "./sponsoredHeadlines";
-import Logo from "../../assets/img/StudLogo.png";
 import Media from "../../assets/img/Media.png";
 import SkeletonLeft from "../../assets/img/skeleton.png";
 import SkeletonRight from "../../assets/img/skeleton1.png";
