@@ -20,7 +20,7 @@
 .sponsoredList {
   width: 100%;
   display: flex;
-  margin-top: 70px;
+  margin-top: 0;
   margin-bottom: 20px;
   padding: 0 20px;
   justify-content: space-around;
@@ -36,7 +36,7 @@
   margin-top: 20px;
   /* border: rgba(0, 0, 0, 0.3) solid 1px;
   border-top: #080808 solid 5px; */
-  padding: 10px 3px;
+  padding: 10px 8px;
   font-size: 13px;
   justify-content: space-between;
 }
@@ -86,6 +86,11 @@
   font-family: 'Sui Generis';
   margin-bottom: 10px;
 }
+@media (max-width: 1024px) {
+  .sponsoredList .sponsoredListpanel .sponsoredListBody .h5 {
+    font-size: 11px;
+  }
+}
 
 .sponsoredList .sponsoredListpanel .sponsoredListBody .sponsoredListView {
   margin-top: 0%;
@@ -94,8 +99,7 @@
 .sponsoredList .sponsoredListpanel .sponsoredListBody .sponsoredListView .form-check {
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid white;
 }
 
@@ -120,6 +124,12 @@
   font-family: 'poppins-semibold';
 }
 
+@media (max-width: 1024px) {
+  .sponsoredList .sponsoredListpanel .sponsoredListBody .sponsoredListView .form-check label {
+    font-size: 12px;
+  }
+}
+
 .sponsoredList>.btn {
   margin-left: auto;
   margin-top: 15px;
@@ -127,8 +137,12 @@
 
 .pitch-to-us {
   float: right;
-  margin: 10px;
+  margin: 20px;
   margin-right: 7%;
+  padding: 30px 50px!important;
+  font-family: 'Sui Generis';
+  border: none!important;
+  border-radius: 0px!important;
 }
 
 .cardHeader {

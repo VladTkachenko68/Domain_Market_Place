@@ -92,7 +92,7 @@ const UserProfile = () => {
 
           </div>
           <div className="col-md-4">
-            <h5 className="text-center">My Video Pitch</h5>
+            <h5 className="text-center breed">My Video Pitch</h5>
             <div className="gray-box text-center videopitch">
               <a href="#" className="v-player">
                 <img src={youtubeImg} alt="icon" className="youtubeImg"/>

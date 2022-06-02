@@ -5,10 +5,11 @@ import StartupBreeders from "../../components/StartupBreeders";
 import { Col, Container, Row } from "react-bootstrap";
 import MainFooter from "../mainFooter/MainFooter";
 import SponsoredHeadlines from "./sponsoredHeadlines";
-import Media from "../../assets/img/Media.png";
+import Designer from "../../assets/img/designer.jpg";
+import Developer from "../../assets/img/developer.png";
+import DevOps from "../../assets/img/devops.png";
 import SkeletonLeft from "../../assets/img/skeleton.png";
 import SkeletonRight from "../../assets/img/skeleton1.png";
-import SearchHeaderGlobal from "../../components/SearchHeader/SearchHeaderGlobal";
 import LogoAnimation from "../LogoAnimation";
 import Fade from "react-awesome-reveal";
 
@@ -16,8 +17,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <CommonHeader />
-      <SearchHeaderGlobal />
-        <LogoAnimation />
+      <LogoAnimation />
       <div className="main pb-4 mt-4">
         <img src={SkeletonLeft} className="skeletonleft" alt="skeleton-left" />
         <img src={SkeletonRight} className="skeletonright" alt="skeleton-right" />
@@ -26,7 +26,7 @@ const Home = () => {
             <Fade direction="up">
               <div className="spring-sponsored-role">
                 <p className="spring-sponsored-headline">
-                  Sponsored Headlines
+                  Certifications
                 </p>
               </div>
             </Fade>
@@ -49,17 +49,26 @@ const Home = () => {
                   </Fade>
                 </div>
                 <Fade direction="up">
-                  <p className="aspiring">
-                    Aspiring entrepreneurs if you have a solid and profitable idea
-                    and you have a <br></br> record of success on the internet upload your
-                    Video Pitch Idea - Rick Schwartz
+                  <p className="aspiring-consaltant">
+                    Our Consaltant
                   </p>
                 </Fade>
-                <div className="pitchbtn-pos">
-                  <button className="btn video-btn text-uppercase">
-                    pitch video
-                  </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <img src={Media} alt="icon" />
+                <div className="consaltant">
+                  <div>
+                    <img src={Designer} alt="icon" className="devconsalt" />
+                    <span className="tapLetter">Designer</span>
+                    <span className="tapname1">Apaev Iwan</span>
+                  </div>
+                  <div>
+                    <img src={DevOps} alt="icon" className="devconsalt" />
+                    <span className="tapLetter">Developer</span>
+                    <span className="tapname">Noah Sim</span>
+                  </div>
+                  <div>
+                    <img src={Developer} alt="icon" className="devconsalt" />
+                    <span className="tapLetter">DevOps</span>
+                    <span className="tapname1">Russell Bello</span>
+                  </div>
                 </div>
               </div>
             </Col>

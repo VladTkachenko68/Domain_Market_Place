@@ -91,24 +91,18 @@ export default function StartupBreeders() {
             <div className="studio-icons flogo" style={{ background: "rgb(14 14 14 / 0%)" }}>
               <div className="container">
                 <Slider {...settings}>
-                  {
-                    populardomain.map((data, index) =>
-                    (
-                      <div className="slider-bg">
-                        <span className="number-assets">
-                          {
-                            data.number
-                          }
-                        </span>
-                        <span className="domain-assets">
-                          {
-                            data.domainName
-                          }
-                        </span>
-                      </div>
-                    )
-                    )
-                  }
+                  <div className="slider-projec1">
+                  </div>
+                  <div className="slider-projec2">
+                  </div>
+                  <div className="slider-projec3">
+                  </div>
+                  <div className="slider-projec4">
+                  </div>
+                  <div className="slider-projec5">
+                  </div>
+                  <div className="slider-projec6">
+                  </div>
                 </Slider>
               </div>
             </div>
@@ -117,7 +111,7 @@ export default function StartupBreeders() {
       </Container>
       <Container fluid>
         <Row className="mx-0">
-          <Col> 
+          <Col>
             <Fade direction="up">
               <div className="spring-buildream-flex">
                 <div className="spring-buildream-role">

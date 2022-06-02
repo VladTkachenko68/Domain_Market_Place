@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import footerLogo from "../../assets/img/footer_logo.png";
+import footerLogo from "../../assets/img/marks.png";
 import "./MainFooter.scss";
 import {
   Col,
@@ -20,34 +20,9 @@ const MainFooter = () => {
               <Link className="navbar-brand me-lg-3 ms-0 mb-3 d-flex align-items-center" to="/">
               </Link>
               <Fade direction="up">
-                <p className="freelancer">Freelance Collaboration &amp; Domain<br></br>Breeding Marketplace</p>
+                <p className="freelancer">Freelance Collaboration</p>
               </Fade>
-              <ul className="links-vertical mt-md-1 footer-content">
-                <Fade direction="up">
-                  <li>
-                    <Link title="How It Works" to="/how-it-works">How It Works</Link>
-                  </li>
-                </Fade>
-                <Fade direction="up">
-                  <li>
-                    <Link title="About Us" to="/about-us">
-                      About Us
-                    </Link>
-                  </li>
-                </Fade>
-                <Fade direction="up">
-                  <li>
-                    <Link to="https://themesberg.com/contact">Contact Us</Link>
-                  </li>
-                </Fade>
-                <Fade direction="up">
-                  <li>
-                    <Link to="/terms-and-conditions">
-                      Terms &amp; Conditions
-                    </Link>
-                  </li>
-                </Fade>
-              </ul>
+              <iframe src="//maps.google.com/maps?q=53.3381768,-6.2613077&z=15&output=embed"></iframe>
             </Col>
             <Col xs={6} md={3} className="mb-5 mb-lg-0 justify-content-center for-space">
             </Col>
@@ -96,7 +71,7 @@ const MainFooter = () => {
                 role="contentinfo"
               >
                 <p className="font-weight-normal font-small mb-0 copyrightfont">
-                  Copyright © stud.com 2021-
+                  Copyright © Nerona 2021-
                   <span className="current-year">2022</span>. <br></br> All rights
                   reserved.
                 </p>
