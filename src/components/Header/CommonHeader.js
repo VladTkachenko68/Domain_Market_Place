@@ -3,9 +3,6 @@
 import React, { Component } from "react";
 import LogoImage from "../../assets/img/marks.png";
 import { Link } from "react-router-dom";
-import Skype from "../../assets/headerIcon/skype.svg";
-import Discord from "../../assets/headerIcon/discord.svg";
-import Phone from "../../assets/headerIcon/phone.svg";
 import Telegram from "../../assets/headerIcon/telegram.png";
 import "./Header.css";
 import {
@@ -26,16 +23,6 @@ class CommonHeader extends Component {
             <Link className="navbar-brand" to="/">
               <img src={LogoImage} alt="logo" className="logoImage" />
             </Link>
-            {process.env.NODE_ENV === 'production' ? <Badge
-              className="ms-4 px-3 custom-badge"
-              bg="warning"
-            >
-              Beta Version
-              <span className="animate-flicker">
-                (No Trading &amp; Communication)
-              </span>
-            </Badge> : <></>}
-
             <>
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
