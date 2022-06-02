@@ -1,4 +1,5 @@
 import "./stylelogo.scss";
+import Logo from '../../assets/img/logomake.png'
 import logoHorse from "../../assets/img/logo/logo-horse.svg"
 import logoTop from "../../assets/img/logo/logo-top.svg";
 import logoBottom from "../../assets/img/logo/logo-bottom.svg";
@@ -33,78 +34,12 @@ const LogoAnimation = () => {
           <p>Freelance Collaboration &</p>
           <p>Domain Breeding Marketplace</p>
         </div> */}
-        <div className="video-wrapper">
-          <div className="relative">
-            <div className="logo-top-container">
-              <div className="horse-container">
-                {/* <img src={black} alt="black" className="black" /> */}
-                <img className="logo-horse" src={logoHorse} alt="logo-horse" />
-              </div>
-              <img className="logo-top" src={logoTop} alt="logo-top" />
-            </div>
-            <img className="logo-bottom" src={logoBottom} alt="logo-bottom" />
-            <div className="horseshoes-group">
-              <img
-                className="horseshoes1"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes2"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes3"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes4"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes5"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes6"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes7"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes8"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes9"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes10"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-              <img
-                className="horseshoes11"
-                src={logoHorseshoes}
-                alt="logo-horseshoes"
-              />
-            </div>
-          </div>
+        <div className="logomake">
+          <img src={Logo} alt="logos" style={{width: "40%"}}/>
         </div>
         <div className="scroll-indicator">
           <div className="title">
-            The World's Most Exclusive Domain Marketplace & Top Freelancer
+            The World's Most Exclusive & Top Freelancer
             Network
           </div>
           <div className="arrow-down-icons">

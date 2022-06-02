@@ -81,9 +81,6 @@ ul.row-sec {
   font-weight: 700;
 }
 
-.spring-sponsored-role {
-}
-
 .studLogo {
   width: 895.66px !important;
   height: 896.97px !important;
@@ -319,7 +316,7 @@ a.btn-expand:hover {
   }
 
   .spring-sponsored-role {
-    margin-top: 10px;
+    margin-top: 300px;
   }
 
   .find-partner p {

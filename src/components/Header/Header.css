@@ -4,23 +4,21 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-  }
+}
+
 .header-bottom>div {
     max-width: 80% !important;
     margin: auto !important;
-    height: 3vw!important;
+    height: 3vw !important;
 }
 
-.mb-control {
-    margin-right: 5vw;
-}
 
 .nav-link {
     font-size: 20px !important;
 }
 
 #basic-nav-dropdown {
-    font-family: 'Sui Generis'!important;
+    font-family: 'Sui Generis' !important;
 }
 
 .navbar {
@@ -59,6 +57,22 @@
     color: white !important;
 }
 
+.svgsdiscord {
+    fill: white !important;
+}
+
+.svgskype {
+    fill: white !important;
+}
+
+.svgtelegram {
+    fill: white !important;
+}
+
+.svgphone {
+    fill: white !important;
+}
+
 .sidenav {
     width: 280px !important;
 }
@@ -69,4 +83,9 @@
 
 .header-bottom.search-global>div {
     max-width: 750px !important;
+}
+.earthEffect {
+    color: white;
+    display: flex;
+    justify-content: center;
 }
