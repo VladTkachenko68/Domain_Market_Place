@@ -54,21 +54,21 @@ const Home = () => {
                   </p>
                 </Fade>
                 <div className="consaltant">
-                  <div>
+                  {/* <div>
                     <img src={Designer} alt="icon" className="devconsalt" />
                     <span className="tapLetter">Designer</span>
                     <span className="tapname1">Apaev Iwan</span>
-                  </div>
+                  </div> */}
                   <div>
                     <img src={DevOps} alt="icon" className="devconsalt" />
                     <span className="tapLetter">Developer</span>
                     <span className="tapname">Noah Sim</span>
                   </div>
-                  <div>
+                  {/* <div>
                     <img src={Developer} alt="icon" className="devconsalt" />
                     <span className="tapLetter">DevOps</span>
                     <span className="tapname1">Russell Bello</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </Col>
