@@ -147,7 +147,6 @@ a {
     img {
       height: 350px;
       width: 80%;
-      object-fit: cover;
     }
 
     div {
@@ -2283,7 +2282,7 @@ a:hover {
 }
 
 iframe {
-  // display: none;
+  display: none;
 }
 .earthEffect {
   width: 500px!important;
