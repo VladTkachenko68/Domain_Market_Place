@@ -7,6 +7,7 @@ import MainFooter from "../mainFooter/MainFooter";
 import SponsoredHeadlines from "./sponsoredHeadlines";
 import Designer from "../../assets/img/designer.jpg";
 import Developer from "../../assets/img/developer.png";
+import Linkedin from "../../components/Linkedin";
 import DevOps from "../../assets/img/devops.png";
 import SkeletonLeft from "../../assets/img/skeleton.png";
 import SkeletonRight from "../../assets/img/skeleton1.png";
@@ -22,6 +23,9 @@ const Home = () => {
         <img src={SkeletonLeft} className="skeletonleft" alt="skeleton-left" />
         <img src={SkeletonRight} className="skeletonright" alt="skeleton-right" />
         <div className="banner with-home">
+          <Container style={{ width: "1550px!important" }}>
+            <Linkedin />
+          </Container>
           <div className="spring-flex">
             <Fade direction="up">
               <div className="spring-sponsored-role">
