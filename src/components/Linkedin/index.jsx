@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/style-prop-object */
 import { Col, Container, Row } from "react-bootstrap";
 import { useState } from "react";
@@ -93,7 +94,6 @@ const Linkedin = () => {
                     <span> ✪ Passed ✪ </span>
                   </div> : null
                 }
-
               </div>
               <div class="img_producto_container" data-scale="1.6" onMouseEnter={CallMouseMove2} onMouseLeave={LeaveEvent1}>
                 <img 
